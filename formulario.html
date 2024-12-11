@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <fieldset style="width: 50%; margin: auto;">
+        <legend>Crear pregunta</legend>
+        <form name="pregunta" action="login.php" method="post">
+            <br>
+
+        <label for="pregunta">Nom de la pregunta</label>
+        <input type="text" name="pregunta" placeholder="Escriu..." required><br><br>
+
+        <label for="text">Text de la pregunta:</label><br>
+        <textarea type="text" name="pregunta" required rows="6" style="width: 50%;" placeholder="Escriu..."></textarea><br><br><!--para hacer el texto mas grande i escribir mas texto-->
+
+        <label for="tipo">Tipus de pregunta: </label>
+        <select name="tipo" required>
+            <option value="">Selecciona un tipo de pregunta</option>
+            <option value="opciomultiple">Opcio múltiple</option>
+            <option value="vertaderfals">Vertader/Fals</option>
+            <option value="numerico">Numerico</option>
+            <option value="respuestacorta">Respuesta corta</option>
+            <option value="respuestalarga">Respues larga</option>
+        </select>
+
+        <br><br>
+        <label for="resposta">Opcions de resposta</label><br>
+        <textarea type="text" name="resposta" required rows="6" style="width: 50%;" placeholder="Escriu cada resposta en una linea"></textarea>
+        <br><br>
+        <label for="resposta_correcta">Opcio correcta (número de la línea)</label>
+        <input type="number" name="resposta_correcta" min="1" required><br><br>
+
+        <label for="ponderacio">Ponderació de la nota(%)</label>
+        <input type="number" name="ponderacio" min="0" max="100"required><br><br>
+
+        <label for="penalitzacio">Penalització(%)</label>
+        <input type="number" name="penalitzacio" min="0" max="100"required><br><br>
+
+        <label for="feedback">Feedback</label><br>
+        <textarea name="feedback" rows="4"></textarea>
+
+        <br><br>
+        <label for="formato">Formato</label>
+        <select name="formato" required>
+            <option value="xml">XML</option>
+            <option value="gift">GIFT</option>
+        </select>
+        <br><br>
+        <button type="submit" style=" width: 20%;">Crear</button>
+        <br>
+        </form>
+    </fieldset>
+    
+</body>
+</html>
