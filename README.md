@@ -1,6 +1,13 @@
 # ProjecteEntorns
 
+Aquest projecte és una aplicació PHP per a la gestió de preguntes, respostes i usuaris, amb accés a base de dades i organització orientada a objectes.
 
+Estructura del projecte
+Administrador.php, Client.php, Usuari.php: Classes d'usuaris.
+Pregunta.php, OpcioResposta.php, TipoPregunta.php: Classes de domini per a preguntes i respostes.
+PreguntaDAO.php: Accés a dades per a preguntes.
+ConexioBBDD.php: Connexió a la base de dades.
+index.html, style.css: Interfície d'usuari.
 ## Estructura de la base de datos
 
 
