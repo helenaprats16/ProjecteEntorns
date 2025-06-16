@@ -23,13 +23,14 @@ CREATE TABLE TipoPregunta(
 
 
 CREATE TABLE Pregunta (
-    id_pregunta INT PRIMARY KEY,
+    id_pregunta INT PRIMARY KEY AUTOINCREMENT,
     nom VARCHAR(50) NOT NULL,
     text TEXT NOT NULL,
-    ponderacioNota DECIMAL(5,2) NOT NULL,
-    penalitzacio DECIMAL (5,2),
+    ponderacioNota INT NOT NULL,
+    penalitzacio INT NOT NULL,
     feedback VARCHAR(50) NOT NULL,
     id_tipo INT,
+    format VARCHAR(20) NOT NULL,
     FOREIGN KEY (id_tipo) REFERENCES TipoPregunta(id_tipo)
 );
 
