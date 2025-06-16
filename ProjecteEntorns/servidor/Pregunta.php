@@ -2,82 +2,70 @@
 class Pregunta {
     private $nom;
     private $text;
-    private $tipo;
-    private $respostes;
-    private $respostaCorrecta;
-    private $ponderacio;
+    private $ponderacioNota;
     private $penalitzacio;
     private $feedback;
+    private $format;
+    private $id_tipo;
 
-
-    //contructor
-    public function __construct($nom, $text, $tipo, $respostes, $respostaCorrecta, $ponderacio, $penalitzacio, $feedback) {
+    // Constructor
+    public function __construct($nom, $text, $ponderacioNota, $penalitzacio, $feedback, $format, $id_tipo) {
         $this->nom = $nom;
         $this->text = $text;
-        $this->tipo = $tipo;
-        $this->respostes = $respostes;
-        $this->respostaCorrecta = $respostaCorrecta;
-        $this->ponderacio = $ponderacio;
+        $this->ponderacioNota = $ponderacioNota;
         $this->penalitzacio = $penalitzacio;
         $this->feedback = $feedback;
+        $this->format = $format;
+        $this->id_tipo = $id_tipo;
     }
 
-    //getteres i setters
-
-    public function getNom() { 
+    // Getters i setters
+    public function getNom() {
         return $this->nom;
-     }
-    public function setNom($nom) { 
-        $this->nom = $nom; 
     }
-
+    public function setNom($nom) {
+        $this->nom = $nom;
+    }
     public function getText() {
         return $this->text;
     }
     public function setText($text) {
         $this->text = $text;
-         
     }
-
-    public function getTipo() {
-        return $this->tipo; 
+    public function getPonderacioNota() {
+        return $this->ponderacioNota;
     }
-    public function setTipo($tipo) {
-        $this->tipo = $tipo; 
+    public function setPonderacioNota($ponderacioNota) {
+        $this->ponderacioNota = $ponderacioNota;
     }
-
-    public function getRespostes() { 
-        return $this->respostes; 
-    }
-    public function setRespostes($respostes) {
-        $this->respostes = $respostes; 
-    }
-
-    public function getRespostaCorrecta() {
-        return $this->respostaCorrecta; 
-    }
-    public function setRespostaCorrecta($respostaCorrecta) {
-        $this->respostaCorrecta = $respostaCorrecta;
-    }
-
-    public function getPonderacio() {
-        return $this->ponderacio; 
-    }
-    public function setPonderacio($ponderacio) {
-        $this->ponderacio = $ponderacio; 
-    }
-
     public function getPenalitzacio() {
-        return $this->penalitzacio; 
+        return $this->penalitzacio;
     }
     public function setPenalitzacio($penalitzacio) {
         $this->penalitzacio = $penalitzacio;
-     }
-
+    }
     public function getFeedback() {
-        return $this->feedback; 
+        return $this->feedback;
     }
     public function setFeedback($feedback) {
-        $this->feedback = $feedback; 
+        $this->feedback = $feedback;
     }
+    public function getFormat() {
+        return $this->format;
+    }
+    public function setFormat($format) {
+        $this->format = $format;
+    }
+    public function getIdTipo() {
+        return $this->id_tipo;
+    }
+
+    public function setIdTipo($id_tipo) {
+        $this->id_tipo = $id_tipo;
+    }
+
+    
+
+
+ 
 }

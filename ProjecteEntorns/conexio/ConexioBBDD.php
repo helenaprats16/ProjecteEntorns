@@ -15,4 +15,5 @@ class ConexioBBDD {
             die('Error de connexió: ' . $e->getMessage());
         }
     }
+
 }
